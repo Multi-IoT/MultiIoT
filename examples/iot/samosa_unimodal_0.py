@@ -10,14 +10,14 @@ from training_structures.unimodal import train, test
 
 modalnum = 0
 traindata, validdata, testdata = get_dataloader(
-    '../../../data/multiiot/samosa')
+    '../../../data/MultiIoT/SAMoSA')
 channels = 3
 # encoders=[LeNet(1,channels,3).cuda(),LeNet(1,channels,5).cuda()]
-encoder = LeNet(1, channels, 3).cuda()
-head = MLP(channels*8, 100, 10).cuda()
+encoder = LeNet(1, channels, 2).cuda()
+head = MLP(channels*48, 40, 27).cuda()
 
 
-train(encoder, head, traindata, validdata, 20, optimtype=torch.optim.SGD,
+train(encoder, head, traindata, validdata, 100, optimtype=torch.optim.SGD,
       lr=0.01, weight_decay=0.0001, modalnum=modalnum)
 
 print("Testing:")
