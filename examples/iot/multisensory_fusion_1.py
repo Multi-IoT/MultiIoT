@@ -10,10 +10,10 @@ from training_structures.Supervised_Learning import train, test
 
 
 traindata, validdata, testdata = get_dataloader(
-    '/path/to/MultiIoT')
+    '/path/to/MultiIoT', task=1)
 channels = 3
 encoders = [LeNet(1, channels, 2).cuda(), LeNet(1, channels, 5).cuda()]
-head = MLP(channels*272, 100, 27).cuda()
+head = MLP(channels*272, 100, 6).cuda()
 
 fusion = Concat().cuda()
 

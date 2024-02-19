@@ -47,7 +47,7 @@ pip install requirements.txt
 
 ## Data Download
 
-1. [TouchPose](https://github.com/eth-siplab/TouchPose) (image, capacitance, depth, pose)
+1. [Audio](https://github.com/eth-siplab/TouchPose) (image, capacitance, depth, pose)
 2. [RGBGaze](https://github.com/svip-lab/RGBD-Gaze) (image, Gaze, depth, IMU)
 3. [SAMoSA](https://github.com/cmusmashlab/SAMoSA) (audio, IMU)
 4. [EyeMU](https://github.com/FIGLAB/EyeMU) (Gaze, IMU)
@@ -56,11 +56,27 @@ pip install requirements.txt
 7. [KITTI](https://www.cvlibs.net/datasets/kitti/index.php) (image,camera, GPS, IMU)
 8. [Ego4D](https://ego4d-data.org/docs/data/imu/) (video, IMU)
 
+For the easy access, we provide the processed data in the following link:
+[MultiIoT Data](https://drive.google.com/drive/folders/1UuWeEYfl_wt2_T36MuP3pjsYzQW6xLEK?usp=sharing)
 
 ## Experiments Usage
 
-For the task on activity recognition, we provide a simple example to run the experiments on the SAMoSA dataset. The code is located in the `examples` directory. To run the example, execute the following command:
+For the task on activity recognition, we provide a simple example to run the experiments on the unimodal setting. The code is located in the `examples` directory. To run the example, execute the following command:
 
 ```
-python examples/iot/samosa_unimodal.py
+python examples/iot/unimodal_0.py
+python examples/iot/unimodal_1.py
+```
+
+For running our multisensory model, execute the following command:
+
+```
+python examples/iot/multisensory_fusion_0.py
+python examples/iot/multisensory_fusion_1.py
+```
+
+For running our multisensory multitask model, execute the following command:
+
+```
+python examples/iot/multisensory_multitask.py
 ```
