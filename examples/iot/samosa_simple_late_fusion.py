@@ -10,7 +10,7 @@ from training_structures.Supervised_Learning import train, test
 
 
 traindata, validdata, testdata = get_dataloader(
-    '../../../data/MultiIoT/SAMoSA')
+    '/path/to/MultiIoT')
 channels = 3
 encoders = [LeNet(1, channels, 2).cuda(), LeNet(1, channels, 5).cuda()]
 head = MLP(channels*272, 100, 27).cuda()

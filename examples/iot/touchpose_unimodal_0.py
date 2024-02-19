@@ -10,7 +10,7 @@ from training_structures.unimodal import train, test
 
 modalnum = 0
 traindata, validdata, testdata = get_dataloader(
-    '../../../data/MultiIoT/TouchPose')
+    '/path/to/MultiIoT')
 channels = 3
 # encoders=[LeNet(1,channels,3).cuda(),LeNet(1,channels,5).cuda()]
 encoder = LeNet(1, channels, 2).cuda()
