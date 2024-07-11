@@ -115,3 +115,30 @@ python examples/iot/iotlm.py --batch_size 8 \
 ## IoT-LM Demo
 
 [Coming soon!]
+
+
+## Custom datasets and algorithms
+
+
+To add a new dataset:
+
+1. Go to datasets/
+2. Add a new folder if appropriate
+3. Write a python file with a get_dataloader function that returns a tuple of 3 dataloaders (for train, valid, test data respectively) containing preprocessed data. Please following the existing examples (such as samosa: datasets/samosa/get_data.py)
+4. Go to examples/ and write an example training python file following the existing examples
+5. Check that calling the dataloader and running a simple training script works
+
+
+To add a new algorithm:
+
+1. Figure out which subfolder to add it into:
+- unimodals/ : unimodal architectures
+- fusions/ : multimodal fusion architectures
+- objective_functions/ : objective functions in addition to supervised training loss (e.g., VAE loss, contrastive loss)
+- training_structures/ : training algorithms excluding objective functions (e.g., balancing generalization, architecture search outer RL loop)
+2. see examples/ and write an example training python file following the existing examples
+3. check that calling the added functions and running a simple training script works
+4. Make sure your new modules are well documented by comments in its input and output format and shapes
+
+
+We welcome new contributions to MultiIoT through new datasets and algorithms. Please refer to the sections above for instructions on adding new datasets and algorithms, and open a pull request if you would like to see a specific dataset or algorithm added. 
