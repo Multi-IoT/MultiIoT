@@ -85,7 +85,7 @@ python examples/iot/multisensory_multitask.py
 For running our IoT language model, execute the following command:
 
 ```
-python examples/iot/pretrain.py --batch_size 8 \
+python examples/iotlm.py --batch_size 8 \
     --epochs 100 \
     --split_epoch 50 \
     --warmup_epochs 5 \
