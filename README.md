@@ -134,9 +134,7 @@ To add a new algorithm:
 1. Figure out which subfolder to add it into:
 - unimodals/ : unimodal architectures
 - fusions/ : multimodal fusion architectures
-- objective_functions/ : objective functions in addition to supervised training loss (e.g., VAE loss, contrastive loss)
-- training_structures/ : training algorithms excluding objective functions (e.g., balancing generalization, architecture search outer RL loop)
-2. see examples/ and write an example training python file following the existing examples
+2. see examples/iot/ and write an example training python file following the existing examples
 3. check that calling the added functions and running a simple training script works
 4. Make sure your new modules are well documented by comments in its input and output format and shapes
 
