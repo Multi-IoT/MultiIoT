@@ -117,7 +117,7 @@ python examples/iot/iotlm.py --batch_size 8 \
 [Coming soon!]
 
 
-## Custom Datasets and Algorithms
+## Open for Custom Datasets and Algorithms
 
 
 To add a new dataset:
