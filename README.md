@@ -117,7 +117,7 @@ python examples/iot/iotlm.py --batch_size 8 \
 [Coming soon!]
 
 
-## Custom datasets and algorithms
+## Custom Datasets and Algorithms
 
 
 To add a new dataset:
@@ -140,3 +140,5 @@ To add a new algorithm:
 
 
 We welcome new contributions to MultiIoT through new datasets and algorithms. Please refer to the sections above for instructions on adding new datasets and algorithms, and open a pull request if you would like to see a specific dataset or algorithm added. 
+
+
