@@ -13,12 +13,24 @@ Correspondence to:
 
 ## Paper
 
+[**IoTLM: Large Multisensory Language Models for the Internet of Things**]()<br>
+Shentong Mo*, Ruslan Salakhutdinov, Louis-Philippe Morency, Paul Pu Liang*<br>
+arXiv 2024.
+
 [**MultiIoT: Benchmarking Machine Learning for the Internet of Things**](https://arxiv.org/abs/2311.06217)<br>
 Shentong Mo*, Louis-Philippe Morency, Ruslan Salakhutdinov, Paul Pu Liang*<br>
 arXiv 2023.
 
+
 If you find this repository useful, please cite our paper:
 ```
+@article{mo2024IoTLM,
+  title={IOT-LM: Large Multisensory Language Models for the Internet of Things},
+  author={Mo, Shentong and Morency, Louis-Philippe and Salakhutdinov, Ruslan and Liang, Paul Pu},
+  journal={arXiv preprint arXiv},
+  year={2024}
+}
+
 @article{mo2023MultiIoT,
   title={MultiIoT: Benchmarking Machine Learning for the Internet of Things},
   author={Mo, Shentong and Morency, Louis-Philippe and Salakhutdinov, Ruslan and Liang, Paul Pu},
@@ -81,6 +93,10 @@ For running our multisensory multitask model, execute the following command:
 python examples/iot/multisensory_multitask.py
 ```
 
+## IoT-LM
+
+The Internet of Things (IoT) network integrating billions of smart physical devices embedded with sensors, software, and communication technologies is a critical and rapidly expanding component of our modern world. The IoT ecosystem provides a rich source of real-world modalities such as motion, thermal, geolocation, imaging, depth, sensors, and audio to recognize the states of humans and physical objects. Machine learning presents a rich opportunity to automatically process IoT data at scale, enabling efficient inference for understanding human wellbeing, controlling physical devices, and interconnecting smart cities. To realize this potential, we introduce IoT-LM, an open-source large multisensory language model tailored for the IoT ecosystem. 
+
 
 For running our IoT language model, execute the following command:
 
@@ -96,3 +112,6 @@ python examples/iot/iotlm.py --batch_size 8 \
 ```
 
 
+## IoT-LM Demo
+
+[Coming soon!]

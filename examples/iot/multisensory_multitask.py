@@ -1,7 +1,9 @@
 import sys
 import os
 sys.path.insert(1,os.getcwd())
-#from perceiver_pytorch.multi_modality_perceiver import MultiModalityPerceiver, InputModality
+# from perceiver_pytorch.multi_modality_perceiver import MultiModalityPerceiver, InputModality
+from perceivers.crossattnperceiver import MultiModalityPerceiver
+from perceiver_pytorch.modalities import InputModality
 import torch
 torch.multiprocessing.set_sharing_strategy('file_system')
 
@@ -14,7 +16,6 @@ trains3,valid3,test3=get_dataloader('/path/to/MultiIoT', task=0)
 from datasets.touchpose.get_data import get_dataloader
 trains4,valid4,test4=get_dataloader('/path/to/MultiIoT', task=1)
 
-from perceivers.crossattnperceiver import MultiModalityPerceiver, InputModality
 device='cuda:0'
 imu_modality=InputModality(
     name='imu',
